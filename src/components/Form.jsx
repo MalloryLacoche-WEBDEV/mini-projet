@@ -1,6 +1,6 @@
 // Composant Form — Formulaire de saisie des paramètres
 // Ce composant reçoit une prop `onGenerate` depuis App.jsx
-// et la appelle quand l'utilisateur soumet le formulaire.
+// et l'appelle quand l'utilisateur soumet le formulaire.
 
 import { useState } from 'react'
 import { OBJECTIVES } from '../data/objectives.js'
@@ -28,13 +28,13 @@ function Form({ onGenerate }) {
         // Validation : poids min ne peut pas être supérieur au poids max
         if (weightMin > weightMax) {
             setError('Le poids minimum doit être inférieur ou égal au poids maximum.')
-            return  // on arrête ici, le tableau ne se génère pas
+            return  
         }
 
         // Cas spécial : si min === max, on force 1 seule ligne
         const effectiveRows = weightMin === weightMax ? 1 : rows
 
-        setError('')  // efface l'erreur précédente si tout est OK
+        setError('') 
         onGenerate({ weightMin, weightMax, rows: effectiveRows, selectedObjectives })
     }
 
@@ -78,3 +78,4 @@ function Form({ onGenerate }) {
 }
 
 export default Form
+
