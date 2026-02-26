@@ -23,8 +23,10 @@ node.js (version 18 ou supérieur)
 
 ### 2. Indispensable
 
-npm install : pour installer les librairies nécessaires au projet
-npm run dev : pour lancer le serveur en local
+* npm install : pour installer les librairies nécessaires au projet
+* npm run dev : pour lancer le serveur en local
+
+---
 
 ## Scénario possible
 
