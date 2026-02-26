@@ -1,7 +1,6 @@
-/* App.css — Reset global et layout de base */
+
 /* Ce fichier contient uniquement les styles qui s'appliquent à toute l'application */
 
-/* Reset de base */
 *,
 *::before,
 *::after {
@@ -23,4 +22,5 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
 }
