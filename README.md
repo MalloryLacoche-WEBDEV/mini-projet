@@ -19,4 +19,26 @@ Suivez ces étapes pour installer et exécuter le projet sur votre machine local
 
 ### 1. Prérequis
 
+node.js (version 18 ou supérieur)
+
+### 2. Indispensable
+
+npm install : pour installer les librairies nécessaires au projet
+npm run dev : pour lancer le serveur en local
+
+## Scénario possible
+
+### Sélection du Poids 
+
+Choisir entre 65 et 75 kg
+
+### Sélection du nombre de lignes
+
+Choisir 10 lignes
+
+### Export
+
+Exporter le tableau de rendu au format CSV et PDF
+
+
 
