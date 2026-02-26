@@ -1,4 +1,4 @@
-# Mini projet permettant de calculer les rapport de protéine journaliers pour différents poids.
+# Mini projet FormProt.
 
 >Ce projet permet de sélectionner un poids minimum et un poids maximum et d'afficher le nombre de gramme de protéine par jour.
 ---
