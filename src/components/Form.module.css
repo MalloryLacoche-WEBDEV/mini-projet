@@ -1,0 +1,87 @@
+/* Form.module.css */
+
+.form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #f8fafc;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Ligne horizontale pour les 3 champs de poids */
+.fieldsRow {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.fieldGroup {
+    margin-bottom: 1rem;
+}
+
+.fieldGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.fieldGroup input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 180px;
+    font-size: 1rem;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Message d'erreur de validation */
+.error {
+    color: #b91c1c;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}

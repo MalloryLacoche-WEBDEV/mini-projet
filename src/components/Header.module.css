@@ -1,0 +1,26 @@
+/* Header.module.css */
+/* Chaque classe ici est isolée — elle ne s'appliquera qu'aux éléments
+   qui utilisent styles.nomDeClasse dans Header.jsx */
+
+/* À vous de styler les classes ci-dessous : */
+
+.header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #1e293b;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}

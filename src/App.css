@@ -1,0 +1,26 @@
+/* App.css — Reset global et layout de base */
+/* Ce fichier contient uniquement les styles qui s'appliquent à toute l'application */
+
+/* Reset de base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #ffffff;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

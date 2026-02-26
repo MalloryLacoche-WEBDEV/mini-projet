@@ -1,0 +1,77 @@
+/* ProteinTable.module.css */
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    overflow-x: auto;
+}
+
+/* En-tête du tableau : titre à gauche, boutons à droite */
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.exportButtons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btnExport {
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btnExport:hover {
+    background-color: #e2e8f0;
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.table {
+
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #646375;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.table tbody tr:hover {
+    background-color: #e2e8f0;
+}
+
+.warning {
+    color: #b91c1c;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
