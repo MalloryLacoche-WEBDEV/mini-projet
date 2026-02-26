@@ -12,7 +12,6 @@ function ProteinTable({ params }) {
 
     function generateWeights() {
         // Cas spécial : 1 seule ligne (min === max)
-        // Sans ce test : step = 0 / 0 = NaN → bug
         if (rows === 1) return [weightMin]
 
         const weights = []
@@ -31,7 +30,6 @@ function ProteinTable({ params }) {
 
     // --- Export CSV ---
     // Génère un fichier .csv et le télécharge dans le navigateur.
-    // Pas de bibliothèque nécessaire : pur JavaScript.
     function exportCSV() {
         const weights = generateWeights()
 
@@ -56,7 +54,7 @@ function ProteinTable({ params }) {
         a.href = url
         a.download = 'besoins-proteines.csv'
         a.click()
-        URL.revokeObjectURL(url)  // libère la mémoire
+        URL.revokeObjectURL(url) 
     }
 
     // --- Export PDF ---
@@ -65,11 +63,9 @@ function ProteinTable({ params }) {
         const weights = generateWeights()
         const doc = new jsPDF()
 
-        // Titre dans le PDF
         doc.setFontSize(14)
         doc.text('Besoins journaliers en protéines', 14, 16)
 
-        // Données du tableau
         const headers = [['Poids (kg)', ...activeObjectives.map(o => o.label)]]
         const body = weights.map(w => [
             `${w} kg`,
@@ -122,3 +118,4 @@ function ProteinTable({ params }) {
 }
 
 export default ProteinTable
+
